@@ -4,9 +4,9 @@ import "../style/header.css"
 const Header = () => {
   return (
     <div className='header'>
-      <h1>RESTAURANT FINDER
+      <h1>Restaurant Finder
         <img src='../restaurant.png' alt='restaurant logo...'/>
-        
+
       </h1>
     </div>
   )

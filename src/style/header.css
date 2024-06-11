@@ -1,17 +1,18 @@
 .header {
-  background-color: #ECB176;
-  height: 4rem;
+  /* background-color: #ECB176; */
+  height: 7rem;
   text-align: center;
-  padding: 4px;
+  padding: 2rem;
   font-family: "Playfair Display", serif;
 }
 
 h1 {
+  font-weight: 900;
   color: #6F4E37;
 }
 
 img {
-  height: 3.5rem;
-  width: 3.5rem;
-  margin-left: 3rem;
+  height: 3rem;
+  width: 3rem;
+  margin-left: 2rem;
 }
