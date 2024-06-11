@@ -1,0 +1,17 @@
+.header {
+  background-color: #ECB176;
+  height: 4rem;
+  text-align: center;
+  padding: 4px;
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  color: #6F4E37;
+}
+
+img {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-left: 3rem;
+}
