@@ -1,8 +1,16 @@
 import React from 'react'
+import RestaurantCard from './RestaurantCard'
 
-const RestaurantsList = () => {
+const RestaurantsList = ({ restaurants }) => {
+
+  // console.log("Restaurants:", restaurants)
+
+  const renderRestaurants = restaurants.map(restaurant => {
+    return <RestaurantCard key={restaurant.id} restaurant={restaurant}/>
+  })
+
   return (
-    <div>RestaurantsList</div>
+    <ul className="cards">{renderRestaurants}</ul>
   )
 }
 

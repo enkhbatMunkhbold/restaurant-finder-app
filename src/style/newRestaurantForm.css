@@ -1,0 +1,19 @@
+.new-restaurant-form {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgba(254, 216, 177);
+}
+
+.new-restaurant-form form {
+  display: flex;
+  justify-content: center;
+}
+
+.new-restaurant-form input {
+  margin-right: 2rem;
+  flex: 1;
+}
+
+.new-restaurant-form button {
+  width: 150px;
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import "../style/search.css"
 
 const Search = () => {
   return (
