@@ -3,8 +3,8 @@ import "../style/card.css"
 
 const RestaurantCard = ({ restaurant }) => {
 
-  const { id, name, image, location } = restaurant
-  const [ favorite, setFavorite ] = useState(false)
+  const { id, name, image, location, isFavorite } = restaurant
+  const [ favorite, setFavorite ] = useState(isFavorite)
 
   function handleButtonClick() {
     setFavorite(prevState => !prevState);
