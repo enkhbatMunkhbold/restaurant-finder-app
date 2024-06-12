@@ -1,13 +1,25 @@
 import React, { useState } from 'react'
 import "../style/card.css"
 
-const RestaurantCard = ({ restaurant }) => {
+const RestaurantCard = ({ restaurant, onUpdateList }) => {
 
   const { id, name, image, location, isFavorite } = restaurant
   const [ favorite, setFavorite ] = useState(isFavorite)
 
+  function handleFavoriteClick(chooseId) {
+    fetch(`http://localhost:6001/restaurants/${chooseId}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "Application/JSON"
+      },
+      body: JSON.stringify({isFavorite: !isFavorite})
+    }).then(res => res.json())
+    .then(updatedRestaurant => onUpdateList(updatedRestaurant))
+  }
+
   function handleButtonClick() {
     setFavorite(prevState => !prevState);
+    handleFavoriteClick(id)
   }
 
   return (
